@@ -1,0 +1,2 @@
+FROM gcr.io/ml-pipeline/metadata-writer:1.8.2
+RUN apt update && apt-get upgrade -y openssl

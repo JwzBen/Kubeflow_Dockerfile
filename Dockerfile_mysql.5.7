@@ -1,0 +1,6 @@
+FROM gcr.io/ml-pipeline/mysql:5.7
+##RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 467B942D3A79BD29
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 467B942D3A79BD29
+RUN apt update
+##RUN apt upgrade openssl dpkg gzip xz-utils
+RUN apt --only-upgrade install openssl dpkg gzip xz-utils
