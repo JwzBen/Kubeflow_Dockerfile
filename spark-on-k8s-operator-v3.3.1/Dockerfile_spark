@@ -1,0 +1,4 @@
+FROM apache/spark:v3.3.0
+USER root
+RUN apt update && apt upgrade -y
+USER 185
